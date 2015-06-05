@@ -1,0 +1,24 @@
+global {
+   # Output directory:
+   ducttape_output="./sample_system/"
+
+   # Input data files:
+        source="./sample_data/source.txt"
+        target="./sample_data/target.txt"
+   sourceTrees="./sample_data/source-trees.txt"
+   targetTrees="./sample_data/target-trees.txt"
+     alignment="./sample_data/alignment.txt"
+
+   tuneSetSource="./sample_data/TestSets/mt06/source.txt"
+   tuneSetRefs="./sample_data/TestSets/mt06/target.txt.*"
+
+   testSetSource=(PickTestSet: mt03="./sample_data/TestSets/mt03/source.txt" mt08="./sample_data/TestSets/mt08/source.txt")
+   testSetRefs=(PickTestSet: mt03="./sample_data/TestSets/mt03/target.txt.*" mt08="./sample_data/TestSets/mt08/target.txt.*") 
+
+   # Parameters:
+   languageModel="./sample_data/sample.en.arpa"
+   numCores=1
+   timberRoot="/home/austinma/git/timber"
+   scriptDir="/home/austinma/git/timber/timber_scripts"
+}
+
